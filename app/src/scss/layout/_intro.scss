@@ -24,6 +24,10 @@
         text-transform: uppercase;
         text-shadow: 0px 2px 0 #2076a5;
         max-width: 625px;
+        @include media(576){
+            font-size: 23px;
+            max-width: 400px;
+        }
         span{
             color: #ffe66a;
         }
@@ -34,6 +38,7 @@
         justify-content: flex-start;
         margin-bottom: 20px;
         &-img{
+            min-width: 60px;
             width: 60px;
             display: flex;
             align-items: center;
@@ -43,10 +48,17 @@
             font-size: 18px;
             color: #fff;
             font-weight: 500;
+            margin-bottom: 4px;
+            @include media(576){
+                font-size: 16px;
+            }
         }
         &-p{
             color: #fff;
             font-size: 18px;
+            @include media(576){
+                font-size: 16px;
+            }
         }
     }
     &__offer{

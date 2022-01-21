@@ -38,13 +38,20 @@ a {
     color: #784f15;
     font-weight: 500;
     border-radius: 80px;
-    padding: 14px 0 14px 0;
+    padding: 14px;
     text-shadow: 0px 1px 0 #ffdba4;
     box-shadow: 0 5px 4px #137ab7;
     transition: all 0.3s ease;
     max-width: 500px;
+    @include media(576){
+        font-size: 16px;
+    }
     picture{
         margin-right: 5px;
+        @include media(576){
+            max-width: 40px;
+            margin-right: 8px;
+        }
     }
     &:hover{
         background-position: bottom -40px center;

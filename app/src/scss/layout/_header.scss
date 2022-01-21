@@ -7,6 +7,9 @@
     height: 90px;
     &__logo{
         width: 250px;
+        @include media(576){
+            width: 200px;
+        }
     }
     &__body{
         display: flex;
@@ -23,6 +26,13 @@
         padding: 4px 20px 4px 20px;
         margin-left: 30px;
         transition: all 0.3s ease;
+        @include media(576){
+            padding: 4px 10px 4px 10px;
+        }
+        @include media(420){
+            font-size: 12px;
+            margin-left: 10px;
+        }
         &:hover{
             color: #ffffff;
             background-color: #a5e4ff;
