@@ -1,0 +1,43 @@
+.how{
+    background-color: #fff5d9;
+    background-image: url('../images/bg-2_2.png'), none, url('../images/bg-2.png');
+    background-repeat: no-repeat, repeat-x, repeat;
+    background-position: left top 80px, bottom, center;
+    padding: 80px 0 80px 0px;
+    @include media(1300){
+        background-image: url('../images/bg-2.png');
+        background-repeat: repeat;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin: 0 0 80px 0;
+        font-size: 33px;
+        color: #0180b6;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        @include media(768){
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+    &__iframe{
+        max-width: 900px;
+        width: 100%;
+        &-wrapper{
+            position: relative;
+            padding-bottom: 56.25%;
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
