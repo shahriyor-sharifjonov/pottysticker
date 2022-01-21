@@ -1,13 +1,22 @@
 .how{
+    &.webp{
+        background-image: url('../images/bg-2_2.webp'), none, url('../images/bg-2.webp');
+        @include media(1300){
+            background-image: url('../images/bg-2.webp');
+            background-repeat: repeat;
+        }
+    }
+    &.nowebp{
+        background-image: url('../images/bg-2_2.png'), none, url('../images/bg-2.png');
+        @include media(1300){
+            background-image: url('../images/bg-2.png');
+            background-repeat: repeat;
+        }
+    }
     background-color: #fff5d9;
-    background-image: url('../images/bg-2_2.png'), none, url('../images/bg-2.png');
     background-repeat: no-repeat, repeat-x, repeat;
     background-position: left top 80px, bottom, center;
     padding: 80px 0 80px 0px;
-    @include media(1300){
-        background-image: url('../images/bg-2.png');
-        background-repeat: repeat;
-    }
     &__body{
         display: flex;
         flex-direction: column;

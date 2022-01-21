@@ -1,6 +1,11 @@
 .intro{
+    &.webp{
+        background-image: none, url('../images/bg-1.webp');
+    }
+    &.nowebp{
+        background-image: none, url('../images/bg-1.png');
+    }
     background-color: #25b1ec;
-    background-image: none, url('../images/bg-1.png');
     background-repeat: repeat-x, repeat;
     background-position: bottom, center;
     padding-top: 150px;

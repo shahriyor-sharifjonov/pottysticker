@@ -11,18 +11,6 @@ $sizes: (1320:$xxl,
     540:$sm,
     0:0);
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-
-    &>[class*='col'] {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-
 @each $container-size,
 $break-point in $sizes {
     @if $container-size==0 {
@@ -33,40 +21,10 @@ $break-point in $sizes {
             padding-right: 15px;
             padding-left: 15px;
         }
-
-        @for $i from 1 through 12 {
-            .col-#{$i} {
-                width: 100% / 12 * $i;
-            }
-        }
     }
 
     @else {
         @media(min-width:#{$break-point}px) {
-            $col-size: sm;
-
-            @if($break-point==1400) {
-                $col-size: xxl;
-            }
-
-            @if($break-point==1200) {
-                $col-size: xl;
-            }
-
-            @if($break-point==992) {
-                $col-size: lg;
-            }
-
-            @if($break-point==768) {
-                $col-size: md;
-            }
-
-            @for $i from 1 through 12 {
-                .col-#{$col-size}-#{$i} {
-                    width: 100% / 12 * $i;
-                }
-            }
-
             .container {
                 max-width: #{$container-size}px;
             }
