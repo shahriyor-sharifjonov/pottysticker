@@ -1,0 +1,67 @@
+.end{
+    background-color: #fff5d9;
+    background-image: url('../images/bg-1_1.png'), none, url('../images/bg-2.png');
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-position: bottom, top, center;
+    padding: 50px 0 50px 0px;
+    &.webp{
+        background-image: url('../images/bg-1_1.webp'), none, url('../images/bg-2.webp');
+    }
+    &__body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 30px;
+        @include media(992){
+            flex-direction: column;
+        }
+    }
+    &__content{
+        width: 580px;
+        @include media(992){
+            width: 100%;
+        }
+    }
+    &__img{
+        @include media(992){
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+    &__title{
+        max-width: 555px;
+        margin: 150px 0 60px 0;
+        font-size: 33px;
+        font-weight: 500;
+        color: #784f15;
+        @include media(1200){
+            margin: 80px 0 60px 0;
+        }
+        @include media(992){
+            display: none;
+            margin-top: 0;
+        }
+        @include media(576){
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+        &.lg{
+            display: none;
+            @include media(992){
+                display: block;
+                max-width: 100%;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    &__btn{
+        margin-left: 0;
+        @include media(992){
+            margin-left: auto;
+        }
+    }
+}
