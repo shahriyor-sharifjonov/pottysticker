@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
-
+    font-family: 'Ubuntu', sans-serif;
     &:focus,
     &:active {
         outline: none;
@@ -22,4 +22,31 @@ input {
 
 a {
     text-decoration: none;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/btn-bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: #ffec6e;
+    border: 4px solid #ffffff;
+    font-size: 24px;
+    text-align: center;
+    color: #784f15;
+    font-weight: 500;
+    border-radius: 80px;
+    padding: 14px 0 14px 0;
+    text-shadow: 0px 1px 0 #ffdba4;
+    box-shadow: 0 5px 4px #137ab7;
+    transition: all 0.3s ease;
+    max-width: 500px;
+    picture{
+        margin-right: 5px;
+    }
+    &:hover{
+        background-position: bottom -40px center;
+    }
 }

@@ -1,3 +1,8 @@
 mixin header()
     header.header 
-        p header
+        .header__body.container 
+            a(href="#!").header__logo 
+                picture
+                    source(srcset="images/logo.webp" type="image/webp") 
+                    img(width="100%" height="100%" src="logo.png" loading="lazy" alt="Site Logo" draggable="false")
+            a(href="#!").header__btn Хочу задать вопрос! 

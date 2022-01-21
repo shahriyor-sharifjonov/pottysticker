@@ -5,8 +5,12 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Document
+        link(href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="styles/index.css")
     body 
         include components/header.pug 
         +header
+        include components/intro.pug 
+        +intro
+        <iframe title="video" width="640" height="360" src="https://www.youtube.com/embed/mTUwpRp1Svk" srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=https://www.youtube.com/embed/mTUwpRp1Svk?autoplay=1&gt;&lt;img src=https://i.ytimg.com/vi/mTUwpRp1Svk/hqdefault.jpg alt='Video'&gt;&lt;span&gt;▶&lt;/span&gt;&lt;/a&gt;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; autoplay" allowfullscreen ></iframe>
         script(src="scripts/index.js") 
