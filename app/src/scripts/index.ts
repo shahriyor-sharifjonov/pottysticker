@@ -1,6 +1,5 @@
 const webpUser = document.querySelectorAll('.checkwebp');
 
-
 function support_format_webp(){
     var elem = document.createElement('canvas');
     if (!!(elem.getContext && elem.getContext('2d'))){
