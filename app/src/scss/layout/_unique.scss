@@ -7,6 +7,9 @@
     @include media(992){
         background-image: none, none, none, url('../images/bg-1.png');
     }
+    @include media(576){
+        padding: 50px 0 50px 0px;
+    }
     &.webp{
         background-image: url('../images/bg-5.webp'), none, none, url('../images/bg-1.webp');
         @include media(992){

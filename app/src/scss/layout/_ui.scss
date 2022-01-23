@@ -45,15 +45,44 @@ a {
     max-width: 500px;
     @include media(576){
         font-size: 16px;
+        height: 50px;
     }
     picture{
         margin-right: 5px;
         @include media(576){
             max-width: 40px;
             margin-right: 8px;
+            height: 30px;
         }
     }
     &:hover{
         background-position: bottom -40px center;
+    }
+}
+
+.privacy{
+    padding: 50px 15px;
+    &__title{
+        color: #00B0F0;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    &__p{
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #595959;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #595959;
+    }
+    &__ul{
+        padding-left: 16px;
+        margin-bottom: 20px;
+    }
+    &__li{
+        color: #595959;
+        font-size: 16px;
     }
 }

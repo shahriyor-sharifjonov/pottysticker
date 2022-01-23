@@ -6,6 +6,9 @@
     @include media(1700){
         background-image: none;
     }
+    @include media(576){
+        padding: 50px 0 50px 0;
+    }
     &.webp{
         background-image: url('../images/bg-4.webp');
         @include media(1700){
@@ -88,6 +91,9 @@
             font-size: 18px;
             &:not(:last-child){
                 margin-bottom: 10px;
+            }
+            @include media(576){
+                height: 60px;
             }
         }
     }

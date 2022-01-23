@@ -17,6 +17,9 @@
     background-repeat: no-repeat, repeat-x, repeat;
     background-position: left top 80px, bottom, center;
     padding: 80px 0 80px 0px;
+    @include media(576){
+        padding: 50px 0 50px 0;
+    }
     &__body{
         display: flex;
         flex-direction: column;

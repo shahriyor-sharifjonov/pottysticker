@@ -2,6 +2,9 @@
     background-repeat: no-repeat;
     background-position: right -50px bottom 10px;
     padding: 80px 0 80px 0px;
+    @include media(576){
+        padding: 50px 0 50px 0;
+    }
     &.webp{
         background-image: none, url('../images/bg-3.webp');
         @include media(1600){
@@ -21,6 +24,7 @@
         gap: 30px;
         @include media(1200){
             flex-wrap: wrap;
+            gap: 10px;
         }
     }
     &__item{
@@ -29,16 +33,16 @@
         align-items: center;
         flex-direction: column;
         @include media(1200){
-            width: calc(50% - 20px);
-        }
-        @include media(576){
-            width: 100%;
+            width: calc(50% - 10px);
         }
         &-img{
             max-width: 240px;
             width: 100%;
             height: 315px;
             margin-bottom: 30px;
+            @include media(1200){
+                height: auto;
+            }
         }
         &-p{
             font-size: 16px;

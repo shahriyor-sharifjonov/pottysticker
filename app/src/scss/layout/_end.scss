@@ -60,6 +60,7 @@
     }
     &__btn{
         margin-left: 0;
+        box-shadow: 0 0px 4px #d2a88b;
         @include media(992){
             margin-left: auto;
         }
